@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas e Hipervínculos</title>
+</head>
+<body bgcolor="pink">
+    <h1>Listas en HTML</h1>
+    Las listas, son elementos que nos permiten organizar textos mediante un formato
+    <br> más elegible y conciso.
+    <br>En HTML, existen tres tipos de listas
+    <ul>
+        <li><b>Listas Ordenadas</b>: vienen dadas por la etiqueta de apertura y cierre
+            <br>ol y /ol. ol significa (Ordered List)
+        </li>
+        <li><b>Listas Desordenadas</b>: vienen dadas por las etiquetas de apertura y cierre
+            <br>ul y /ul. ul significa (Unordered List)
+        </li>
+        <li><b>Listas de Definición</b>: vienen dadas por las etiquetas de apertura y cierre
+            <br>dl y /dl. dl significa Definition List.
+        </li>
+    </ul>
+    <hr>
+    <h2>Listas Ordenadas</h2>
+    La estructura de una lista ordenadas, <b>ol</b>, viene dada de la siguiente manera:
+    <ul>
+        <li>Tiene una etiqueta de apertura ol y una etiqueta de cierre /ol</li>
+        <li>Para poder definir el contenido de la lista, utilizaremos las etiquetas
+            <br>li y /li, que serán las que contendrán la información de nuestro listado.
+        </li>
+    </ul>
+    <br>Ejemplo de Lista Ordenada
+    <ol>
+        <li>Kali Linux</li>
+        <li>MS Windows 10/11</li>
+        <li>Ubuntu</li>
+        <li>MacOS</li>
+        <li>Linux Mint</li>
+    </ol>
+    <hr>
+    <h2>Listas Desordenadas</h2>
+    La estructura de una lista desordenadas, <b>ul</b>, viene dada de la siguiente manera:
+    <ul>
+        <li>Tiene una etiqueta de apertura ul y una etiqueta de cierre /ul</li>
+        <li>Para poder definir el contenido de la lista, utilizaremos las etiquetas
+            <br>li y /li, que serán las que contendrán la información de nuestro listado.
+        </li>
+    </ul>
+    <br>Ejemplo de Lista Desordenada
+    <ul>
+        <li>Programación</li>
+        <li>BBDD</li>
+        <li>SSII</li>
+        <li>ED</li>
+        <li>LMGSG</li>
+        <li>F.Cloud</li>
+        <li>Itinerario</li>
+    </ul>
+    <br> Como podemos observar, la estructura de una lista ordenada y una lista
+    <br>desordenada, es prácticamente la misma. Ambos tienen elementos li, y sólo
+    <br>cambian la etiqueta de comienzo que tienen: ol / ul. 
+    <br>En base a esto, podemos establecer que la estiqueta ol y ul presentan una
+    <br>serie de atributos que les permiten inicializar en un valor concreto a las listas ol
+    <br>y cambiar la numeración por letras o números, y en el caso de las listas ul 
+    <br>podemos cambiar sólamente el ícono gráfico del lista.
+    <br>Esto se realiza mediante el atributo <b>type</b> y <b>start</b>
+    <br>Así, los tipos estructura que podemos utilizar en las listas son las siguientes:
+    <ul>
+        <li>Letras Mayúsculas o Minúsculas (Aa)</li>
+        <li>Cifras Romanas en Mayúsculas (I) o Minúsculas (i)</li>
+        <li>Número, por defecto sino ponemos nada, empezaríamos por el 1</li>
+        <li>disc (viñetas redondas rellenas)</li>
+        <li>circle (viñetas redondas huecas/vacias)</li>
+        <li>square (viñetas cuadradas rellenas)</li>
+    </ul>
+    <br>Ejemplo de Lista Ordenada con letras que empiezan por la posición 5
+    <ol type="a" start="5">
+        <li>Mercedes Clase A</li>
+        <li>Toyota RAV4</li>
+        <li>Renault Megane</li>
+        <li>Seat Ibiza</li>
+        <li>Ford Fiesta</li>
+    </ol>
+    <br>Ejemplo de Lista Ordenada con letras que empiezan por la posición 5
+    <ul type="square"><font color="red">
+        <li><mark>Pikachu</mark></li>
+        <font color="orange"><li>Charmander</li></font>
+        <li><font color="green">Bulbasur</font></li>
+        <li><font color="darkorange">Dragonite</font></li>
+        <li><font color="blue">Digimon</font></li>
+    </font>
+    </ul>
+    <hr>
+    <h2>Listas de Definición en HTML</h2>
+    Las listas de definición en HTML, tienen una estructura totalmente distinta
+    <br>que las listas ol y ul.
+    <ul>
+        <li>Las etiquetas <b>dl</b> de apertura y cierre, que significan 
+            <br>Description List</li>
+        <li>Las etiquetas <b>dt</b> de apertura y cierra, que significan 
+            <br>Description Term</li>
+        <li>Las etiquetas <b>dd</b> de apertura y cierre, que significan
+            <br>Definition Description
+        </li>
+    </ul>
+    <br>Ejemplo de Lista de Definición
+    <dl>
+        <dt>dl</dt>
+        <dd>Crea la caja que contiene los items de la lista</dd>
+        <dt>dt</dt>
+        <dd>Item que crea un término a definir</dd>
+        <dt>dd</dt>
+        <dd>Item que contiene una definición</dd>
+    </dl>
+    <br>Ejemplo de Lista de Definición con términos del CFGS de DAW
+    <dl>
+        <dt>Programación
+            <dd>Clases</dd>
+            <dd>Atributos</dd>
+            <dd>Variables</dd>
+            <dd>Java</dd>
+            <dd>Métodos</dd>            
+        </dt>
+        <dt>ED
+            <dd>Metodologías de Trabajo</dd>
+            <dd>PSINT: software para crear diagramas de lógica de programación</dd>
+            <dd>UML</dd>
+            <dd>Git/Github</dd>
+            <dd>JUnit</dd>            
+        </dt>
+        <dt>Sistemas Informáticos
+            <dd>Cambios de base</dd>
+            <dd>F.A y Carcasas</dd>
+            <dd>Placas base</dd>
+            <dd>Linux</dd>
+            <dd>Redes</dd>            
+        </dt>
+        <dt>Lenguaje de Marcas
+            <dd>HTML</dd>
+            <dd>CSS</dd>
+            <dd>JavaScript</dd>
+            <dd>Web Responsive</dd>
+            <dd>CSS Grid y FlexBox</dd>            
+        </dt>
+    </dl>
+</body>
+</html>
